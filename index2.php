@@ -6,9 +6,12 @@ $cognome = $_GET["cognome"];
 $email = $_GET["email"];
 $age = $_GET["age"];
 
-if (strlen($nome) <= 3) {
-    echo "Il Nome deve avere lunghezza pari a 3";
-}else {
+if ( (strlen($nome) <= 3) && (is_numeric($age)) && (strpos($email, '@') !== false) ) {
+    echo "il tuo accesso è valido";
+}
+
+
+/*else {
     echo "il tuo nome è $nome";
 };
 
@@ -22,7 +25,7 @@ if (strpos($email, '@') !== false) {
     echo " la tue email è: $email";
 } else {
     echo " la tua email non è valida";
-}
+}*/
 
 ?>
 

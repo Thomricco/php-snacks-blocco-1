@@ -39,7 +39,7 @@ $calendario = [
 
 for($i=0;$i<count($calendario);$i++) {
 
-    echo $calendario[$i];
+    echo $calendario[$i]["casa"] . " - " . $calendario[$i]["ospite"] . " | " . $calendario[$i]["risultatoCasa"] . "-" . $calendario[$i]["risultatoOspite"] . "<br/>";
 
 }
 
