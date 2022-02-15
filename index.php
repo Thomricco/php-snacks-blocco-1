@@ -35,12 +35,16 @@ $calendario = [
 
 ];
 
-$risultatiPartite = $calendario["partita01"]["casa"] . " " . $calendario["partita01"]["ospite"] . " | " . $calendario["partita01"]["risultatoCasa"] . "-" . $calendario["partita01"]["risultatoOspite"];
+//$risultatiPartite = $calendario["partita01"]["casa"] . " " . $calendario["partita01"]["ospite"] . " | " . $calendario["partita01"]["risultatoCasa"] . "-" . $calendario["partita01"]["risultatoOspite"];
+
+for($i=0;$i<count($calendario);$i++) {
+
+    echo $calendario[$i];
+
+}
 
 
-
-
-var_dump($risultatiPartite)
+//var_dump($risultatiPartite)
 
 
 
