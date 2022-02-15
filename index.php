@@ -1,43 +1,46 @@
 <?php
 
 $calendario = [
-    "partita01" => [
+    [
         "casa" => "Atalanta",
         "ospite" => "Juventus",
-        "risultartoCasa" => 1,
+        "risultatoCasa" => 1,
         "risultatoOspite" => 1,
     ],
-    "partita02" => [
+    [
         "casa" => "Empoli",
         "ospite" => "Cagliari",
-        "risultartoCasa" => 1,
+        "risultatoCasa" => 1,
         "risultatoOspite" => 1,
     ],
-    "partita03" => [
+    [
         "casa" => "Sassuolo",
         "ospite" => "Roma",
-        "risultartoCasa" => 2,
+        "risultatoCasa" => 2,
         "risultatoOspite" => 2,
     ],
-    "partita04" => [
+    [
         "casa" => "Genoa",
         "ospite" => "Salernitana",
-        "risultartoCasa" => 1,
+        "risultatoCasa" => 1,
         "risultatoOspite" => 1,
     ],
-    "partita05" => [
+    [
         "casa" => "Napoli",
         "ospite" => "Inter",
-        "risultartoCasa" => 1,
+        "risultatoCasa" => 1,
         "risultatoOspite" => 1,
     ],
 
 
 ];
 
-$risultatiPartite = $calendario["partita01"]["casa"] . " " . $calendario["partita01"]["ospite"];
+$risultatiPartite = $calendario["partita01"]["casa"] . " " . $calendario["partita01"]["ospite"] . " | " . $calendario["partita01"]["risultatoCasa"] . "-" . $calendario["partita01"]["risultatoOspite"];
 
-var_dump($risultatoPartite)
+
+
+
+var_dump($risultatiPartite)
 
 
 

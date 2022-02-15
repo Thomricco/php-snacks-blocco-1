@@ -6,13 +6,23 @@ $cognome = $_GET["cognome"];
 $email = $_GET["email"];
 $age = $_GET["age"];
 
-if (strlen($nome) != 3) {
+if (strlen($nome) <= 3) {
     echo "Il Nome deve avere lunghezza pari a 3";
+}else {
+    echo "il tuo nome è $nome";
 };
 
 if (is_numeric($age)) {
-    echo "L'età deve contenere un numero";
+    echo " la tua età è: $age";
+} else {
+    echo " L'età deve contenere un numero";
 };
+
+if (strpos($email, '@') !== false) {
+    echo " la tue email è: $email";
+} else {
+    echo " la tua email non è valida";
+}
 
 ?>
 
@@ -27,7 +37,7 @@ if (is_numeric($age)) {
 <body>
 
 
-<h1>Benvenuto <?php echo $nome; ?> <?php echo $cognome; ?></h1>
+<h1>Benvenuto</h1>
     
 </body>
 </html>
